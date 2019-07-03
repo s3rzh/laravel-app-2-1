@@ -19,7 +19,7 @@
                         <tr>
                             <td>ID</td>
                             <td>Title</td>
-                            <td>Actions</td>
+                            <td>Actions1</td>
                         </tr>
                         </thead>
                     </table>
