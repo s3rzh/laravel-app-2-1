@@ -21,11 +21,12 @@
                         <td>{{$task->id}}</td>
                         <td>{{$task->title}}</td>
                         <td>
+
                             <a href="{{route('tasks.show', $task->id)}}">
-                                <i class="fa fa-eye">&nbsp;</i>
+                                <i class="fa fa-address-book" aria-hidden="true">&nbsp;</i>
                             </a>
                             <a href="{{ route('tasks.edit', $task->id) }}">
-                                <i class="fa fa-edit">&nbsp;</i>
+                                <i class="fa fa-edit" aria-hidden="true">&nbsp;</i>
                             </a>
                             {!! Form::open(['method' => 'DELETE', 'route' => ['tasks.destroy', $task->id]]) !!}
                                 <button onclick="return confirm('Are you sure?')"><i class="fa fa-trash-alt">&nbsp;</i></button>

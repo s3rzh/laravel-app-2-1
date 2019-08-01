@@ -16,6 +16,15 @@ class TasksController extends Controller
     public function index(){
         $tasks = Task::all();
 
+        \Debugbar::startMeasure('controller', 'Controller working time');
+        usleep(10000);
+        \Debugbar::info('запускаеся!');
+        \Debugbar::error('тест дебагбар!');
+        \Debugbar::addException(new \Exception('исключение'));
+
+
+        \Debugbar::stopMeasure('controller');
+
         return view('tasks.index', ['tasks' => $tasks]);
     }
 
