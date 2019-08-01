@@ -4,6 +4,9 @@
     <div class="container">
         <h3>My tasks</h3>
         <a href="{{ route('tasks.create') }}" class="btn btn-success">Create</a>
+        <div id="app">
+            <p>@{{  message }}</p>
+        </div>
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <table class="table">
